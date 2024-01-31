@@ -1,0 +1,726 @@
+<!DOCTYPE HTML>
+<html style="height: 100%; margin: 0px; padding: 0px; overflow: hidden">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+</head>
+<body style="width: 100%; height: 100%; margin: 0px; padding: 0px">
+
+<div id="panorama" ></div>
+</div>
+
+<script>
+var viewer = pannellum.viewer('panorama', {   
+
+    "default": {
+        "firstScene": "spot1",
+        "author": "Luke Spall",
+        "sceneFadeDuration": 1000
+    },
+
+    "scenes": {
+        "spot1": {
+            "title": "Spot 1",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_01.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Spot 2",
+                    "sceneId": "spot2"
+                },
+				
+                {
+                    "pitch": 6.9225767468703605,
+                    "yaw": 10.175344573918096,
+                    "type": "scene",
+                    "text": "Spot 3",
+                    "sceneId": "spot3",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				
+                {
+                    "pitch": 2,
+                    "yaw": 70,
+                    "type": "scene",
+                    "text": "Spot 12",
+                    "sceneId": "spot12",
+                    "targetYaw": -134,
+                    "targetPitch": -3
+                },
+				
+                {
+                    "pitch": 6,
+                    "yaw": -75,
+                    "type": "scene",
+                    "text": "Spot 15",
+                    "sceneId": "spot15",
+                    "targetYaw": 4,
+                    "targetPitch": -4
+                }
+            ]
+        },
+
+        "spot2": {
+            "title": "Spot 2",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_02.jpg",
+            "hotSpots": [
+
+                {
+                    "pitch": 2.67342207658396,
+                    "yaw": 149.40097486290222,
+                    "type": "scene",
+                    "text": "Spot 1",
+                    "sceneId": "spot1",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+
+            ]
+        },
+
+        "spot3": {
+            "title": "Spot 3",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_03.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 6.657460538207143, 
+                    "yaw": 29.271469371186186,
+                    "type": "scene",
+                    "text": "Spot 1",
+                    "sceneId": "spot1",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": -7, 
+                    "yaw": -77,
+                    "type": "scene",
+                    "text": "Spot 4",
+                    "sceneId": "spot4",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": 4, 
+                    "yaw": 79,
+                    "type": "scene",
+                    "text": "Spot 22",
+                    "sceneId": "spot22",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        "spot4": {
+            "title": "Spot 4",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_04.jpg",
+            "hotSpots": [
+                {
+                    "pitch":-3,
+                    "yaw": -165,
+                    "type": "scene",
+                    "text": "Spot 3",
+                    "sceneId": "spot3",
+                    "targetYaw": 107,
+                    "targetPitch": 3.65
+                },
+                {
+                    "pitch":-3,
+                    "yaw": -1,
+                    "type": "scene",
+                    "text": "Spot 5",
+                    "sceneId": "spot5",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		
+        "spot5": {
+            "title": "Spot 5",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_05.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -1.825903190138774,
+                    "yaw": -171.0329223176219,
+                    "type": "scene",
+                    "text": "Spot 4",
+                    "sceneId": "spot4",
+                    "targetYaw": -163,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -0.8122382083606897,
+                    "yaw": -5.508223655445136,
+                    "type": "scene",
+                    "text": "Spot 6",
+                    "sceneId": "spot6",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		
+		
+        "spot6": {
+            "title": "Spot 6",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_06.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -1.825903190138774,
+                    "yaw": -171.0329223176219,
+                    "type": "scene",
+                    "text": "Spot 5",
+                    "sceneId": "spot5",
+                    "targetYaw": -163,
+                    "targetPitch": -5
+                },
+				
+				
+				
+                {
+                    "pitch": -2.9699407467859373,
+                    "yaw": -2.454488054147646,
+                    "type": "scene",
+                    "text": "Spot 7",
+                    "sceneId": "spot7",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				
+				
+                {
+                    "pitch": -4,
+                    "yaw": 63,
+                    "type": "scene",
+                    "text": "Spot 16",
+                    "sceneId": "spot16",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+			]
+		},
+		
+		
+        "spot7": {
+            "title": "Spot 7",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_07.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -4.895584959296362,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "Spot 6",
+                    "sceneId": "spot6",
+                    "targetYaw": -167,
+                    "targetPitch": 4.5
+                },
+				
+				
+                {
+                    "pitch": 0,
+                    "yaw": -6,
+                    "type": "scene",
+                    "text": "Spot 8",
+                    "sceneId": "spot8",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				
+                {
+                    "pitch": -5,
+                    "yaw": -85,
+                    "type": "scene",
+                    "text": "Spot 10",
+                    "sceneId": "spot10",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },	
+				
+				
+                {
+                    "pitch": 0,
+                    "yaw": 39,
+                    "type": "scene",
+                    "text": "Spot 20",
+                    "sceneId": "spot20",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },	
+				
+			]
+		},
+        "spot8": {
+            "title": "Spot 8",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_08.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -4.895584959296362,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "Spot 7",
+                    "sceneId": "spot7",
+                    "targetYaw": -173,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -4.895584959296362,
+                    "yaw": -4,
+                    "type": "scene",
+                    "text": "Spot 9",
+                    "sceneId": "spot9",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				
+                {
+                    "pitch": 0,
+                    "yaw": 92,
+                    "type": "scene",
+                    "text": "Spot 18",
+                    "sceneId": "spot18",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+			]
+		},
+        "spot9": {
+            "title": "Spot 9",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_09.jpg",
+            "hotSpots": [
+	                {
+	                    "pitch": 0,
+	                    "yaw": -170,
+	                    "type": "scene",
+	                    "text": "Spot 8",
+	                    "sceneId": "spot8",
+	                    "targetYaw": 162,
+	                    "targetPitch": -6.5
+	                },	
+			]
+		},
+		"spot10": {
+            "title": "Spot 10",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_10.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -6,
+                    "yaw": 91,
+                    "type": "scene",
+                    "text": "Spot 7",
+                    "sceneId": "spot7",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },	
+				
+				
+                {
+                    "pitch": 0,
+                    "yaw": -9,
+                    "type": "scene",
+                    "text": "Spot 11",
+                    "sceneId": "spot11",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },	
+			]
+		},
+		
+		"spot11": {
+            "title": "Spot 11",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_11.jpg",
+			"hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -161,
+                    "type": "scene",
+                    "text": "Spot 10",
+                    "sceneId": "spot10",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },		
+			]
+		},
+		
+		
+		"spot12": {
+            "title": "Spot 12",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_12.jpg",
+			"hotSpots": [
+                {
+                    "pitch": 5,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Spot 1",
+                    "sceneId": "spot1",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },		
+				
+                {
+                    "pitch": 10,
+                    "yaw": 164,
+                    "type": "scene",
+                    "text": "Spot 3",
+                    "sceneId": "spot3",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },		
+				
+                {
+                    "pitch": 0,
+                    "yaw": -130,
+                    "type": "scene",
+                    "text": "Spot 13",
+                    "sceneId": "spot13",
+                    "targetYaw": 74,
+                    "targetPitch": -15
+                },		
+			]
+		},
+		
+		
+		
+		"spot13": {
+            "title": "Spot 13",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_13.jpg",
+			"hotSpots": [
+                {
+                    "pitch": 6.5,
+                    "yaw": -37,
+                    "type": "scene",
+                    "text": "Spot 12",
+                    "sceneId": "spot12",
+                    "targetYaw": -6,
+                    "targetPitch": -4
+                },	
+				
+				
+                {
+                    "pitch": -6,
+                    "yaw": 26,
+                    "type": "scene",
+                    "text": "Spot 14",
+                    "sceneId": "spot14",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                },	
+			]
+		},
+		
+		
+		"spot14": {
+            "title": "Spot 14",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_14.jpg",
+			"hotSpots": [
+                {
+                    "pitch":1,
+                    "yaw": 125,
+                    "type": "scene",
+                    "text": "Spot 13",
+                    "sceneId": "spot13",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                },	
+			]
+		},
+			
+			
+			
+		"spot15": {
+            "title": "Spot 15",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_15.jpg",
+			"hotSpots": [
+                {
+                    "pitch":1,
+                    "yaw": 125,
+                    "type": "scene",
+                    "text": "Spot 1",
+                    "sceneId": "spot1",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                },	
+                {
+                    "pitch": 0,
+                    "yaw": 25,
+                    "type": "scene",
+                    "text": "Spot 20",
+                    "sceneId": "spot20",
+                    "targetYaw": -113,
+                    "targetPitch": -10
+                },	
+			]
+		},
+		
+		
+		"spot16": {
+            "title": "Spot 16",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_16.jpg",
+			"hotSpots": [
+                {
+                    "pitch":4,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Spot 6",
+                    "sceneId": "spot6",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                },	
+				
+                {
+                    "pitch":2,
+                    "yaw": 118,
+                    "type": "scene",
+                    "text": "Spot 7",
+                    "sceneId": "spot7",
+                    "targetYaw": -94,
+                    "targetPitch": 0
+                },	
+				
+				
+                {
+                    "pitch": 3,
+                    "yaw": -6,
+                    "type": "scene",
+                    "text": "Spot 17",
+                    "sceneId": "spot17",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                },	
+			]
+		},
+		
+		"spot17": {
+            "title": "Spot 17",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_17.jpg",
+			"hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": -152,
+                    "type": "scene",
+                    "text": "Spot 16",
+                    "sceneId": "spot16",
+                    "targetYaw": -165,
+                    "targetPitch": 9
+                }
+			]
+		},
+		
+		"spot18": {
+            "title": "Spot 18",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_18.jpg",
+			"hotSpots": [
+                {
+                    "pitch": -1.5,
+                    "yaw": 159,
+                    "type": "scene",
+                    "text": "Spot 7",
+                    "sceneId": "spot7",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                }
+			]
+		},
+		
+		"spot19": {
+            "title": "Spot 19",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_19.jpg",
+			"hotSpots": [
+                {
+                    "pitch": 1,
+                    "yaw": -96,
+                    "type": "scene",
+                    "text": "Spot 20",
+                    "sceneId": "spot20",
+                    "targetYaw": 91,
+                    "targetPitch": 0
+                },
+				
+                {
+                    "pitch": -7,
+                    "yaw": -174,
+                    "type": "scene",
+                    "text": "Spot 21",
+                    "sceneId": "spot21",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                }
+			]
+		},
+		
+		
+		"spot20": {
+            "title": "Spot 20",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_20.jpg",
+			"hotSpots": [
+                {
+                    "pitch": 4,
+                    "yaw": -124,
+                    "type": "scene",
+                    "text": "Spot 19",
+                    "sceneId": "spot19",
+                    "targetYaw": 62,
+                    "targetPitch": -9
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 80,
+                    "type": "scene",
+                    "text": "Spot 15",
+                    "sceneId": "spot15",
+                    "targetYaw": -173,
+                    "targetPitch": -9
+                }
+			]
+		},
+		
+		
+		
+		"spot21": {
+            "title": "Spot 21",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_21.jpg",
+			"hotSpots": [
+                {
+                    "pitch": 0.5,
+                    "yaw": 173,
+                    "type": "scene",
+                    "text": "Spot 19",
+                    "sceneId": "spot19",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                },
+                {
+                    "pitch": 0.5,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "Spot 22",
+                    "sceneId": "spot22",
+                    "targetYaw": -6,
+                    "targetPitch": 26
+                }
+			]
+		},
+		
+		
+		"spot22": {
+            "title": "Spot 22",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "./images/Sphere_22.jpg",
+			"hotSpots": [
+                {
+                    "pitch": 5,
+                    "yaw": -25,
+                    "type": "scene",
+                    "text": "Spot 21",
+                    "sceneId": "spot21",
+                    "targetYaw": 175,
+                    "targetPitch": -1
+                },
+				
+				
+                {
+                    "pitch": 7.7,
+                    "yaw": 105,
+                    "type": "scene",
+                    "text": "Spot 3",
+                    "sceneId": "spot3",
+                    "targetYaw": -86,
+                    "targetPitch": -16
+                }
+			]
+		}
+			
+		
+    },
+	
+    "sceneId": "circle",  // ID of the scene to be loaded initially
+    "autoLoad": true,     // Auto load the default scene
+});
+
+
+viewer.on('animatefinished', function(event) {
+	console.log(event);
+
+	});
+	</script>
+
+</body>
+</html>
